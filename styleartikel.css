@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    margin-top: 50px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 30px;
+    height: 50px;
+    padding-left: 30;
+    padding-right: 50;
+    line-height: 50px;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-between;
+   
+;
+}
+
+header * {
+    display: inline;
+    height: 100px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+header ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header li {
+    margin-left: 50px;
+    left: 50px;
+   
+  
+}
+header .profile-img {
+    width: 50px;
+    height: auto;
+    margin-left: 20px;
+}
+header a {
+    text-decoration: none;
+    color: black;
+    font-family: "Bebas Neue", sans-serif; /* Tilføj skrifttypen her */
+}
+section {
+    height: 100vh;
+    border: 1px solid rgba(248, 248, 248, 0.091);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    text-align: center;
+    
+    background-size: cover; /* Add this line */
+    background-position: center center; /* Add this line */
+    background-repeat: no-repeat; /* Add this line */
+    background-attachment: fixed; /* Add this line */
+}
+
+#hero .profile-img{
+width: 50px;
+border-radius: 300%;
+margin-left: 500px;
+cursor: pointer;
+}
+
+h2 {
+    margin-left: 300px;
+    margin-top: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   color: #669999;
+   font-size: xx-large;
+
+}
+
+h3{
+    margin-left: 300px;
+    margin-top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    margin-left: 300px;
+    margin-top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 300px;
+}
+
+.gallery {
+	display: flex;
+	padding: 2px;
+	transition: .3s;
+    margin-top: 100px;
+    margin-left: 35px;
+	
+	&:hover &__image {
+		filter: blur(1.5em);
+	}
+	
+	&__column {
+		display: flex;
+		flex-direction: column;
+		width: 25%;
+	}
+	
+	&__link {
+		margin: 2px;
+		overflow: hidden;
+		
+	}
+
+    .gallery__thumb:hover .gallery__image {
+        filter: none; /* Fjerner filteret, når musen holdes over billedet */
+    }
+    
+   
+    .gallery__thumb .gallery__caption {
+        opacity: 0; /* Skjuler billedteksten som standard */
+    }
+    
+    .gallery__thumb:hover .gallery__caption {
+        opacity: 1; /* Viser billedteksten, når musen holdes over billedet */
+    }
+	
+	&__thumb {
+		position: relative;
+	}
+	
+	&__image {
+		display: block;
+		width: 100%;
+		transition: .3s;
+		
+		&:hover {
+			transform: scale(1.1);
+		}
+    
+   
+
+
+footer {
+    text-align: center;
+    padding: 5px;
+    padding-top: 10px;
+}
